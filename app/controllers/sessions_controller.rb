@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:session][:password])
       # log the user in and redirect
       log_in user
-      remember user
+      params[:session][:remember_me] == '1' ? remember(user) : forget(user)
       redirect_to user # rails infers route to user url
     else
       # create an error message
