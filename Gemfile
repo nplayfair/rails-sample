@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.3'
+gem 'rails', '4.2.7.1'
 gem 'bcrypt'
 gem 'faker',  '1.4.2'
 gem 'carrierwave',             '0.10.0'
